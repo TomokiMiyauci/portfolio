@@ -8,7 +8,9 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv public",
-    "lint": "eslint . --ext .js,.svelte --fix"
+    "lint": "yarn lint:eslint && yarn lint:stylelint",
+    "lint:eslint": "eslint . --ext .js,.svelte",
+    "lint:stylelint": "stylelint src/*.svelte"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^12.0.0",
@@ -24,6 +26,9 @@
     "rollup-plugin-livereload": "^1.0.0",
     "rollup-plugin-svelte": "^5.0.3",
     "rollup-plugin-terser": "^5.1.2",
+    "stylelint": "^13.6.1",
+    "stylelint-config-recess-order": "^2.0.4",
+    "stylelint-config-standard": "^20.0.0",
     "svelte": "^3.0.0"
   },
   "dependencies": {
