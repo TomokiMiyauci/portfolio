@@ -1589,6 +1589,25 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"prettier-plugin-svelte@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "prettier-plugin-svelte@npm:1.1.0"
+  peerDependencies:
+    prettier: ^1.16.4 || ^2.0.0
+    svelte: ^3.2.0
+  checksum: 0ea31037e0483a5ee0a8ce395f5c5f7f6a9bda03a73f205bf307d8d9f43ff5eb9067d5c1fa6c983175fee3d9befa06503b62f34599cf057093b88e2ad5e89eca
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^2.0.5":
+  version: 2.0.5
+  resolution: "prettier@npm:2.0.5"
+  bin:
+    prettier: bin-prettier.js
+  checksum: d249d89361870a29b20e8b268cb09e908490b8c9e21f70393d12a213701f29ba7e95b7f9ce0ad63929c16ce475176742481911737ae3da4a498873e4a3b90990
+  languageName: node
+  linkType: hard
+
 "process-nextick-args@npm:~2.0.0":
   version: 2.0.1
   resolution: "process-nextick-args@npm:2.0.1"
@@ -2065,6 +2084,8 @@ fsevents@~2.1.2:
     eslint: ^7.4.0
     eslint-plugin-standard: ^4.0.1
     eslint-plugin-svelte3: ^2.7.3
+    prettier: ^2.0.5
+    prettier-plugin-svelte: ^1.1.0
     rollup: ^2.3.4
     rollup-plugin-livereload: ^1.0.0
     rollup-plugin-svelte: ^5.0.3
