@@ -10,15 +10,20 @@
     "node": true
   },
   "extends": [
-    "eslint:recommended"
+    "eslint:recommended",
+    "prettier"
   ],
   "plugins": [
-    "svelte3"
+    "svelte3",
+    "prettier"
   ],
   "overrides": [
     {
       "files": ["**/*.svelte"],
       "processor": "svelte3/svelte3"
     }
-  ]
+  ],
+  "rules": {
+    "prettier/prettier": "error"
+  }
 }
